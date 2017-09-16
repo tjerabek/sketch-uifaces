@@ -1,8 +1,8 @@
 {
     "name" : "UI Faces",
     "identifier" : "tjerabek.sketch-uifaces",
-    "version" : "1.0.2",
-    "description" : "Sketch plugin for loading data from UI Faces API (http://uifaces.com/)",
+    "version" : "1.0.3",
+    "description" : "Sketch plugin for loading data from UI Faces API (http://uifaces.co/)",
     "authorEmail" : "t.jerabek@gmail.com",
     "author" : "Tomas Jerabek",
     "commands" : [
