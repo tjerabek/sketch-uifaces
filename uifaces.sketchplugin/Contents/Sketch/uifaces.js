@@ -13,9 +13,9 @@ function setImage(layer, image) {
   return fill;
 }
 
-function onRun(context) {
+function onRun(context, category) {
   var selection = context.selection;
-  var url = 'https://uifaces.co/api?category=imdb&random&limit=' + selection.count();
+  var url = 'https://uifaces.co/api?category=' + category + '&random&limit=' + selection.count();
   
   var res = get(url);
   var json = JSON.parse(NSString.alloc().initWithData_encoding(res, NSUTF8StringEncoding));
@@ -29,3 +29,17 @@ function onRun(context) {
 	  }
   }
 };
+
+
+function onRunImdb(context){
+	onRun(context, 'imdb');
+}
+function onRunTwitter(context){
+	onRun(context, 'twitter');
+}
+function onRunBonus(context){
+	onRun(context, 'bonus');
+}
+function onRunUsers(context){
+	onRun(context, 'users');
+}

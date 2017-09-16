@@ -7,29 +7,29 @@
     "author" : "Tomas Jerabek",
     "commands" : [
     {
-      "script" : "uifaces-imdb.js",
-      "handler" : "onRun",
+      "script" : "uifaces.js",
+      "handler" : "onRunImdb",
       "shortcut" : "",
       "name" : "Add Actors",
       "identifier" : "uifaces-imdb"
     },
     {
-      "script" : "uifaces-twitter.js",
-      "handler" : "onRun",
+      "script" : "uifaces.js",
+      "handler" : "onRunTwitter",
       "shortcut" : "",
       "name" : "Add Singers",
       "identifier" : "uifaces-twitter"
     },
     {
-      "script" : "uifaces-bonus.js",
-      "handler" : "onRun",
+      "script" : "uifaces.js",
+      "handler" : "onRunBonus",
       "shortcut" : "",
       "name" : "Add Bonus Faces",
       "identifier" : "uifaces-bonus-faces"
     },
     {
-      "script" : "uifaces-users.js",
-      "handler" : "onRun",
+      "script" : "uifaces.js",
+      "handler" : "onRunUsers",
       "shortcut" : "",
       "name" : "Add User Submitted",
       "identifier" : "uifaces-users"
