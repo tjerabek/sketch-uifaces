@@ -15,7 +15,7 @@ function setImage(layer, image) {
 
 function onRun(context) {
   var selection = context.selection;
-  var url = 'https://uifaces.co/api?limit=' + selection.count();
+  var url = 'https://uifaces.co/api?random&limit=' + selection.count();
 
   for (var i=0; i < selection.count(); i++) {
       var res = get(url);
