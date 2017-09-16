@@ -16,16 +16,16 @@ function setImage(layer, image) {
 function onRun(context) {
   var selection = context.selection;
   var url = 'https://uifaces.co/api?category=imdb&random&limit=' + selection.count();
+  
+  var res = get(url);
+  var json = JSON.parse(NSString.alloc().initWithData_encoding(res, NSUTF8StringEncoding));
 
-  for (var i=0; i < selection.count(); i++) {
-      var res = get(url);
-      var json = JSON.parse(NSString.alloc().initWithData_encoding(res, NSUTF8StringEncoding));
-    
-      if (json) {
-          var image_url = json[i].photo;
-          var image = NSImage.alloc().initWithContentsOfURL(NSURL.URLWithString(image_url));        
-          var layer = selection[i];
-          setImage(layer, image);
-      }
+  if (json) {
+	  for (var i=0; i < selection.count(); i++) {
+	    var image_url = json[i].photo;
+	    var image = NSImage.alloc().initWithContentsOfURL(NSURL.URLWithString(image_url));        
+	    var layer = selection[i];
+	    setImage(layer, image);
+	  }
   }
 };

@@ -1,17 +1,38 @@
 {
     "name" : "UI Faces",
     "identifier" : "tjerabek.sketch-uifaces",
-    "version" : "1.0.3",
+    "version" : "1.0.4",
     "description" : "Sketch plugin for loading data from UI Faces API (http://uifaces.co/)",
     "authorEmail" : "t.jerabek@gmail.com",
     "author" : "Tomas Jerabek",
     "commands" : [
     {
-      "script" : "ui-faces.js",
+      "script" : "uifaces-imdb.js",
       "handler" : "onRun",
       "shortcut" : "",
-      "name" : "Load random faces",
-      "identifier" : "uifaces"
+      "name" : "Add Actors",
+      "identifier" : "uifaces-imdb"
+    },
+    {
+      "script" : "uifaces-twitter.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Add Singers",
+      "identifier" : "uifaces-twitter"
+    },
+    {
+      "script" : "uifaces-bonus.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Add Bonus Faces",
+      "identifier" : "uifaces-bonus-faces"
+    },
+    {
+      "script" : "uifaces-users.js",
+      "handler" : "onRun",
+      "shortcut" : "",
+      "name" : "Add User Submitted",
+      "identifier" : "uifaces-users"
     }
   ]
 }
