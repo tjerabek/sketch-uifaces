@@ -14,20 +14,18 @@ function setImage(layer, image) {
 }
 
 function onRun(context) {
-  var url = 'http://uifaces.com/api/v1/random'
-
   var selection = context.selection;
+  var url = 'https://uifaces.co/api?limit=' + selection.count();
 
-  for (var i=0; i<selection.count(); i++) {
+  for (var i=0; i < selection.count(); i++) {
       var res = get(url);
       var json = JSON.parse(NSString.alloc().initWithData_encoding(res, NSUTF8StringEncoding));
     
       if (json) {
-          var image_url = json.image_urls.epic;
+          var image_url = json[i].photo;
           var image = NSImage.alloc().initWithContentsOfURL(NSURL.URLWithString(image_url));        
           var layer = selection[i];
           setImage(layer, image);
       }
   }
 };
-
