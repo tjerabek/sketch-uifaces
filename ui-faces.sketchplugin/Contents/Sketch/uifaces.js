@@ -30,16 +30,15 @@ function onRun(context, category) {
   }
 };
 
-
-function onRunImdb(context){
-	onRun(context, 'imdb');
+function runMovies(context){
+	onRun(context, 'movies');
 }
-function onRunTwitter(context){
-	onRun(context, 'twitter');
+function runMusic(context){
+	onRun(context, 'music');
 }
-function onRunBonus(context){
-	onRun(context, 'bonus');
+function runCartoons(context){
+	onRun(context, 'cartoons');
 }
-function onRunUsers(context){
+function runUsers(context){
 	onRun(context, 'users');
 }

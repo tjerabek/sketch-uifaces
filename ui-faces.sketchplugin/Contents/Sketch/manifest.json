@@ -1,0 +1,38 @@
+{
+    "name" : "UI Faces",
+    "identifier" : "mightyalex.sketch-uifaces",
+    "version" : "1.0.5",
+    "description" : "Loading avatars from UI Faces API (http://uifaces.co/)",
+    "authorEmail" : "hello@mightyalex.com",
+    "author" : "Mighty Alex",
+    "commands" : [
+    {
+      "script" : "uifaces.js",
+      "handler" : "runMovies",
+      "shortcut" : "",
+      "name" : "Movies",
+      "identifier" : "1-movies"
+    },
+    {
+      "script" : "uifaces.js",
+      "handler" : "runMusic",
+      "shortcut" : "",
+      "name" : "Music",
+      "identifier" : "2-music"
+    },
+    {
+      "script" : "uifaces.js",
+      "handler" : "runCartoons",
+      "shortcut" : "",
+      "name" : "Cartoons",
+      "identifier" : "3-cartoons"
+    },
+    {
+      "script" : "uifaces.js",
+      "handler" : "runUsers",
+      "shortcut" : "",
+      "name" : "User Submitted",
+      "identifier" : "4-users"
+    }
+  ]
+}
