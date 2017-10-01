@@ -36,6 +36,9 @@ function runMovies(context){
 function runMusic(context){
 	onRun(context, 'music');
 }
+function runTech(context){
+	onRun(context, 'tech');
+}
 function runCartoons(context){
 	onRun(context, 'cartoons');
 }
