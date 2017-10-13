@@ -1,7 +1,7 @@
 {
     "name" : "UI Faces",
     "identifier" : "mightyalex.sketch-uifaces",
-    "version" : "1.0.5",
+    "version" : "1.0.6",
     "description" : "Loading avatars from UI Faces API (http://uifaces.co/)",
     "authorEmail" : "hello@mightyalex.com",
     "author" : "Mighty Alex",

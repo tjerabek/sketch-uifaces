@@ -8,7 +8,11 @@ function setImage(layer, image) {
   var fill = layer.style().fills().firstObject();
   fill.setFillType(4);
   fill.setPatternFillType(1);
-  var imageData = MSImageData.alloc().initWithImage_convertColorSpace(image, false)
+  if (MSApplicationMetadata.metadata().appVersion < 47) {
+    var imageData = MSImageData.alloc().initWithImage_convertColorSpace(image, false);
+  }else {
+    var imageData = MSImageData.alloc().initWithImage(image);
+  }
   fill.setImage(imageData);
   return fill;
 }
